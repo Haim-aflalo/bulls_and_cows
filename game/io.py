@@ -24,6 +24,12 @@ def print_status(state) -> None:
         "history:",state["history"],"\n"
         "seen:",state["seen"])
 
+def print_result(state, won: bool) -> None:
+    won = logic.is_won(state["history"][1], len(state["secret"]))
+    if state["max_tries"] <= state["tries_used"]:
+        print("GAME OVER !!!", state["secret"])
+    if state["max_tries"] >= state["tries_used"]and won == True:
+        print("YOU WON !!!",state["secret"])
 
 
 
