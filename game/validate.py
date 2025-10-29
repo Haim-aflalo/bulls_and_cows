@@ -8,3 +8,5 @@ def is_valid_guess(guess: str, length: int, *, unique_digits: bool = True) -> tu
 
 
 
+def is_new_guess(guess: str, history: set[str]) -> bool:
+    return guess in history
