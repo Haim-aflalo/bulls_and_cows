@@ -1,4 +1,4 @@
-def is_valid_guess(guess: str, length: int, *, unique_digits: bool = True) -> tuple[bool, str]:
+def is_valid_guess(guess: str, length: int) -> tuple[bool, str]:
     if len(guess) == length:
         return False,"len under the requirement"
     if guess.isdigit():
