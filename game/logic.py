@@ -9,7 +9,7 @@ def score_guess(secret: str, guess: str) -> tuple[int, int]:
             cows += 1
     return bulls,cows
 
-def is_wom(bulls,length):
+def is_won(bulls,length):
     return bulls == length
 
 def init_state(secret: str, length: int, max_tries: int | None) -> dict:

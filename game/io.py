@@ -1,4 +1,7 @@
 import logic
+
+
+
 def prompt_guess(length):
     while True:
         guess = input("enter your number: ")
@@ -10,6 +13,8 @@ def prompt_guess(length):
             continue
         return guess
 
+def print_feedback(guess,bulls,cows):
+    print(f"in your guess:{guess}""\n"f"you have:{bulls}bulls and {cows} cows")
 
 def print_status(state) -> None:
 
